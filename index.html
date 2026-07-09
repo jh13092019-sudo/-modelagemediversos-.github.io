@@ -170,7 +170,7 @@
                     </svg>
                     <div>
                         <p class="text-sm text-indigo-50 leading-relaxed">
-                            <strong>Aviso:</strong> Nossos moldes não são testados e aprovados para venda. Mas usamos bases testadas, e cada marca tem suas medidas e estilo, o que deu certo para um as vezes nao da certo para outro, pois nao foi personalizado para aquele cliente. Por isso moldes prontos podem ter que fazer ajuste.
+                            <strong>Aviso:</strong> Usamos bases testadas, e cada marca tem suas medidas e estilo, o que deu certo para um as vezes nao da certo para outro, pois nao foi personalizado para aquele cliente. Por isso moldes prontos podem ter que fazer ajuste.
                         </p>
                     </div>
                 </div>
@@ -194,7 +194,43 @@
             </div>
         </div>
 
-        <!-- Seção de Serviços -->
+        <p class="text-indigo-100 text-lg mb-8">Encontre o molde perfeito para sua confecção</p>
+            
+            <div class="relative max-w-2xl mx-auto">
+                <input type="text" id="searchInput" 
+                    placeholder="Pesquise por termo (ex: vestido, fitness, plus size...)" 
+                    class="w-full px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 shadow-xl text-lg">
+                <div class="absolute right-4 top-4 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+                <button onclick="filterCategory('Mãe e Filha')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Mãe e Filha</button>
+                <button onclick="filterCategory('Plus Size')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Plus Size</button>
+                <button onclick="filterCategory('Moda Praia')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Moda Praia</button>
+                <button onclick="filterCategory('Fitness')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Fitness</button>
+                <button onclick="filterCategory('Uniformes / Profissional')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Uniformes</button>
+                <button onclick="resetSearch()" class="px-3 py-1 bg-white text-indigo-600 hover:bg-gray-100 rounded-full text-sm font-semibold">Limpar</button>
+            </div>
+        </div>
+    </header>
+
+        <!-- Portfólio de Moldes -->
+        <div id="resultsInfo" class="mb-8 text-gray-600 font-medium">Carregando modelos...</div>
+        
+        <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Items will be injected here -->
+        </div>
+        
+        <div id="noResults" class="hidden text-center py-20">
+            <p class="text-2xl text-gray-400">Nenhum modelo encontrado para sua busca.</p>
+            <button onclick="resetSearch()" class="mt-4 text-indigo-600 font-semibold hover:underline">Ver todos os modelos</button>
+        </div>
+    </main>
+
+    <!-- Seção de Serviços -->
         <section class="services-section">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que Fazemos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -243,42 +279,6 @@
             <p>Temos uma plataforma exclusiva de conversão de moldes PDF em grandes formatos para PDF A4. Quer conhecer?</p>
             <a href="https://falldanila-arch.github.io/convertermoldea4/" class="cta-btn" target="_blank" style="background: white; color: #f5576c;">Clique Aqui</a>
         </div>
-
-        <p class="text-indigo-100 text-lg mb-8">Encontre o molde perfeito para sua confecção</p>
-            
-            <div class="relative max-w-2xl mx-auto">
-                <input type="text" id="searchInput" 
-                    placeholder="Pesquise por termo (ex: vestido, fitness, plus size...)" 
-                    class="w-full px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 shadow-xl text-lg">
-                <div class="absolute right-4 top-4 text-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="mt-4 flex flex-wrap justify-center gap-2">
-                <button onclick="filterCategory('Mãe e Filha')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Mãe e Filha</button>
-                <button onclick="filterCategory('Plus Size')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Plus Size</button>
-                <button onclick="filterCategory('Moda Praia')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Moda Praia</button>
-                <button onclick="filterCategory('Fitness')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Fitness</button>
-                <button onclick="filterCategory('Uniformes / Profissional')" class="px-3 py-1 bg-indigo-500 hover:bg-indigo-400 rounded-full text-sm">Uniformes</button>
-                <button onclick="resetSearch()" class="px-3 py-1 bg-white text-indigo-600 hover:bg-gray-100 rounded-full text-sm font-semibold">Limpar</button>
-            </div>
-        </div>
-    </header>
-
-        <!-- Portfólio de Moldes -->
-        <div id="resultsInfo" class="mb-8 text-gray-600 font-medium">Carregando modelos...</div>
-        
-        <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- Items will be injected here -->
-        </div>
-        
-        <div id="noResults" class="hidden text-center py-20">
-            <p class="text-2xl text-gray-400">Nenhum modelo encontrado para sua busca.</p>
-            <button onclick="resetSearch()" class="mt-4 text-indigo-600 font-semibold hover:underline">Ver todos os modelos</button>
-        </div>
-    </main>
 
     <footer class="bg-gray-100 border-t border-gray-200 py-8 mt-12">
         <div class="max-w-6xl mx-auto px-4 text-center text-gray-500">
