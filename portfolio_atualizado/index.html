@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Modelagem e Diversos</title>
+    <meta name="description" content="Moldes para Costura, Audaces, Corel e PDF. Desenvolvimento de moldes profissionais, curso de modelagem CAD e soluções personalizadas para sua marca — moldes digitais, digitalização, risco mapa e conversão de arquivo para Audaces, Corel e PDF.">
+    <meta name="keywords" content="moldes para costura, audaces, corel, pdf, modelagem, moldes digitais, curso modelagem CAD, moldes profissionais, digitalização moldes, risco mapa">
+    <meta name="author" content="Modelagem e Diversos">
+    <meta property="og:title" content="Portfólio Modelagem e Diversos - Moldes Profissionais">
+    <meta property="og:description" content="Moldes para Costura, Audaces, Corel e PDF. Desenvolvimento de moldes profissionais, curso de modelagem CAD e soluções personalizadas para sua marca.">
+    <meta property="og:type" content="website">
+    <title>Moldes para Costura | Audaces, Corel e PDF | Modelagem e Diversos</title>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        .card { transition: transform 0.2s, box-shadow 0.2s; }
+        .card { transition: transform 0.2s, box-shadow 0.2s; position: relative; }
         .card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         .category-badge { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
         .line-clamp-3 {
@@ -38,12 +44,123 @@
             border-left: 4px solid #fbbf24;
             backdrop-filter: blur(8px);
         }
+        .whatsapp-btn {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+        .whatsapp-btn:hover {
+            background: #1fad50;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .shipping-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+        }
+        .shipping-info h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .shipping-option {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .shipping-option:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .shipping-option strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .services-section {
+            margin: 48px 0;
+        }
+        .service-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1f2937;
+        }
+        .service-card p {
+            color: #6b7280;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .cta-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        .exclusive-banner {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 32px 0;
+        }
+        .exclusive-banner h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .exclusive-banner p {
+            margin-bottom: 16px;
+        }
     </style>
 </head>
 <body class="min-h-screen">
     <header class="bg-indigo-600 text-white py-12 px-4 shadow-lg">
         <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Portfólio Modelagem e Diversos</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Modelagem e Diversos</h1>
+            <p class="text-indigo-100 text-lg mb-6">Moldes para Costura, Audaces, Corel e PDF</p>
             
             <!-- Aviso Importante debaixo do título -->
             <div class="warning-banner max-w-3xl mx-auto mb-10 px-6 py-4 rounded-lg text-left border-l-4">
@@ -83,6 +200,74 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Seção de Informações de Envio -->
+        <div class="shipping-info">
+            <h3>📦 Formas de Envio</h3>
+            <div class="shipping-option">
+                <strong>1. Moldes Digitais (PDF)</strong>
+                <p>Você imprime em casa (sai em várias folhas, e emendando fica tamanho real) ou em gráfica com plotter. Ideal para quem quer economizar no frete.</p>
+            </div>
+            <div class="shipping-option">
+                <strong>2. Tamanhos Fracionados</strong>
+                <p>Todos os tamanhos impressos juntos em papel grande (75g), sem corte, o que é mais econômico. Em média, sai R$ 24,90 cada molde + o frete.</p>
+            </div>
+            <div class="shipping-option">
+                <strong>3. Tamanhos Separados</strong>
+                <p>Em média sai R$ 20,00 cada tamanho. Não enviamos menos do que 5 tamanhos pra sair nesse valor. O frete é calculado pelo site. Obs: Ele vai impresso separado mas não vai cortado. Chama WhatsApp e passa o CEP!</p>
+            </div>
+        </div>
+
+        <!-- Seção de Serviços -->
+        <section class="services-section">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que Fazemos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3>Moldes em PDF e A4</h3>
+                    <p>Moldes digitais em PDF prontos para imprimir em casa. Variedade completa de peças femininas, infantis e masculinas.</p>
+                    <a href="#portfolioGrid" class="cta-btn">Aproveitar Oferta</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📐</div>
+                    <h3>Modelagem Personalizada</h3>
+                    <p>Criamos moldes únicos baseados nas suas especificações, fotos ou tabelas de medidas — desenvolvimento de moldes personalizados sob medida.</p>
+                    <a href="https://wa.me/5535998121698?text=Olá! Gostaria de saber mais sobre modelagem personalizada." class="cta-btn">Saiba Mais</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👗</div>
+                    <h3>Desenvolvimento de Coleção</h3>
+                    <p>Transformamos suas ideias em coleções completas com moldes digitalizados, profissionais e prontos para a confecção.</p>
+                    <a href="https://wa.me/5535998121698?text=Olá! Gostaria de saber mais sobre desenvolvimento de coleção." class="cta-btn">Saiba Mais</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Curso Modelagem CAD</h3>
+                    <p>Domine as técnicas de modelagem computadorizada com nossos cursos especializados em Audaces. Modalidades online, presencial e corporativa.</p>
+                    <a href="https://aprendaaudaces.site" class="cta-btn" target="_blank">Aprenda Audaces</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Operador de Audaces</h3>
+                    <p>Focado na operação do sistema para enfesto, encaixe otimizado e liberação de risco. Ideal para quem busca atuar no setor de corte e produção.</p>
+                    <a href="https://aprendaaudaces.site" class="cta-btn" target="_blank">Aprenda Audaces</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Formação Completa</h3>
+                    <p>Aprenda a criar moldes do zero, gradação, interpretação de modelos e todas as ferramentas essenciais para se tornar um modelista CAD profissional.</p>
+                    <a href="https://aprendaaudaces.site" class="cta-btn" target="_blank">Aprenda Audaces</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Exclusivo -->
+        <div class="exclusive-banner">
+            <h3>🎁 Exclusivo para Você!</h3>
+            <p>Temos uma plataforma exclusiva de conversão de moldes PDF em grandes formatos para PDF A4. Quer conhecer?</p>
+            <a href="https://falldanila-arch.github.io/convertermoldea4/" class="cta-btn" target="_blank" style="background: white; color: #f5576c;">Clique Aqui</a>
+        </div>
+
+        <!-- Portfólio de Moldes -->
         <div id="resultsInfo" class="mb-8 text-gray-600 font-medium">Carregando modelos...</div>
         
         <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -97,7 +282,7 @@
 
     <footer class="bg-gray-100 border-t border-gray-200 py-8 mt-12">
         <div class="max-w-6xl mx-auto px-4 text-center text-gray-500">
-            <p>&copy; 2024 Portfólio Modelagem e Diversos. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Modelagem e Diversos. Todos os direitos reservados.</p>
             <p class="text-xs mt-2">Busca inteligente por proximidade (Fuzzy Search)</p>
         </div>
     </footer>
