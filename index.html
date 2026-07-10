@@ -155,6 +155,20 @@
             margin-bottom: 16px;
         }
     </style>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+    </style>
 </head>
 <body class="min-h-screen bg-gray-50">
     <!-- Carrossel de Fotos -->
@@ -216,6 +230,7 @@
             <h1 class="text-4xl md:text-5xl font-bold mb-2">Modelagem e Diversos</h1>
             <p class="text-indigo-100 text-lg mb-6">Moldes para Costura, Audaces, Corel e PDF</p>
         </div>
+    </header>
 
     <script>
         let currentSlide = 0;
@@ -242,6 +257,8 @@
         // Inicializar primeiro dot
         dots[0].classList.replace('bg-white/50', 'bg-white');
     </script>
+</body>
+</html>
         
             <!-- Container Principal Compacto -->
 <div class="max-w-7xl mx-auto px-2 py-4">
