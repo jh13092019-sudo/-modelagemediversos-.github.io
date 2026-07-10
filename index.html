@@ -156,20 +156,65 @@
         }
     </style>
 </head>
-<body class="min-h-screen">
-    <!-- Foto de capa ocupando toda a largura da página -->
-    <div class="w-full">
-        <img src="https://raw.githubusercontent.com/jh13092019-sudo/-modelagemediversos-.github.io/refs/heads/main/src/1783622885162.png"
-             alt="Modelagem e Costura"
-             class="w-full h-48 md:h-72 object-cover"
-             onerror="this.onerror=null; this.src='https://via.placeholder.com/1600x400/6366f1/ffffff?text=Modelagem+e+Diversos';">
+<body class="min-h-screen bg-gray-50">
+    <!-- Carrossel de Fotos -->
+    <div class="relative w-full overflow-hidden group">
+        <div id="carousel" class="w-full">
+            <!-- Foto 1 (Capa Original) -->
+            <div class="carousel-item active transition-opacity duration-700 ease-in-out">
+                <img src="https://raw.githubusercontent.com/jh13092019-sudo/-modelagemediversos-.github.io/refs/heads/main/src/1783622885162.png"
+                     alt="Modelagem e Costura"
+                     class="w-full h-64 md:h-96 object-cover"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/1600x400/6366f1/ffffff?text=Modelagem+e+Diversos';">
+            </div>
+            <!-- Foto 2 (Camiseta Flamengo) -->
+            <div class="carousel-item transition-opacity duration-700 ease-in-out">
+                <img src="https://drive.google.com/uc?export=view&id=1VwAIsbRX3RaSf3uuJQeDlEI3G5C7thLP"
+                     alt="Camiseta de Fut Flamengo"
+                     class="w-full h-64 md:h-96 object-cover"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/1600x400/6366f1/ffffff?text=Camiseta+Flamengo';">
+            </div>
+            <!-- Foto 3 (Jaqueta e Calça) -->
+            <div class="carousel-item transition-opacity duration-700 ease-in-out">
+                <img src="https://drive.google.com/uc?export=view&id=1vGinHdgiAn5pg3-eC3DYZ5z5cVyqG7Ll"
+                     alt="Jaqueta gola e zíper e calça punho"
+                     class="w-full h-64 md:h-96 object-cover"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/1600x400/6366f1/ffffff?text=Jaqueta+e+Calça';">
+            </div>
+            <!-- Foto 4 (Moletom Masculino) -->
+            <div class="carousel-item transition-opacity duration-700 ease-in-out">
+                <img src="https://drive.google.com/uc?export=view&id=1xjjzFBYWSA7WETsHw29naDM7GWzocEgE"
+                     alt="Moletom masculino com zíper"
+                     class="w-full h-64 md:h-96 object-cover"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/1600x400/6366f1/ffffff?text=Moletom+Masculino';">
+            </div>
+        </div>
+
+        <!-- Controles do Carrossel -->
+        <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+            <div class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer" onclick="goToSlide(0)"></div>
+            <div class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer" onclick="goToSlide(1)"></div>
+            <div class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer" onclick="goToSlide(2)"></div>
+            <div class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer" onclick="goToSlide(3)"></div>
+        </div>
     </div>
     
     <header class="bg-indigo-600 text-white py-12 px-4 shadow-lg">
         <div class="max-w-6xl mx-auto text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-2">Modelagem e Diversos</h1>
             <p class="text-indigo-100 text-lg mb-6">Moldes para Costura, Audaces, Corel e PDF</p>
-     
             <!-- Container Principal Compacto -->
 <div class="max-w-7xl mx-auto px-2 py-4">
     
