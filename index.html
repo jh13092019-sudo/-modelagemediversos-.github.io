@@ -170,38 +170,65 @@
             <h1 class="text-4xl md:text-5xl font-bold mb-2">Modelagem e Diversos</h1>
             <p class="text-indigo-100 text-lg mb-6">Moldes para Costura, Audaces, Corel e PDF</p>
      
-            <!-- Aviso Importante debaixo do título -->
-            <div class="warning-banner max-w-xl mx-auto mb-6 px-3 py-2 rounded-lg text-left border-l-4">
-                <div class="flex items-start gap-2">
-                    <svg class="w-4 h-4 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                    </svg>
-                    <div>
-                        <p class="text-xs text-indigo-50 leading-snug">
-                            <strong>Aviso:</strong> Usamos bases testadas, e cada marca tem suas medidas e estilo, o que deu certo para um as vezes nao da certo para outro, pois nao foi personalizado para aquele cliente. Por isso moldes prontos podem ter que fazer ajuste.
-                        </p>
-                    </div>
-                </div>
-            
-
-    <main class="max-w-7xl mx-auto px-4 py-12">
-        <!-- Seção de Informações de Envio -->
-        <div class="shipping-info">
-            <h3>📦 Formas de Envio</h3>
-            <div class="shipping-option">
-                <strong>1. Moldes Digitais (PDF)</strong>
-                <p>Você imprime em casa (sai em várias folhas, e emendando fica tamanho real) ou em gráfica com plotter. Ideal para quem quer economizar no frete.</p>
-            </div>
-            <div class="shipping-option">
-                <strong>2. Tamanhos Fracionados</strong>
-                <p>Todos os tamanhos impressos juntos em papel grande (75g), sem corte, o que é mais econômico. Em média, sai R$ 24,90 cada molde + o frete.</p>
-            </div>
-            <div class="shipping-option">
-                <strong>3. Tamanhos Separados</strong>
-                <p>Em média sai R$ 20,00 cada tamanho. Não enviamos menos do que 5 tamanhos pra sair nesse valor. O frete é calculado pelo site. Obs: Ele vai impresso separado mas não vai cortado. Chama WhatsApp e passa o CEP!</p>
-                <a href="https://wa.me/5535998121698?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20sobre%20comprar%20da%20moldes%20da%20Modelagem%20e%20Diversos." target="_blank" rel="noopener noreferrer" class="btn btn-roxo btn-sm">--Comprar Aqui--</a>
+            <!-- Container Principal Compacto -->
+<div class="max-w-7xl mx-auto px-2 py-4">
+    
+    <!-- Grid de 4 Colunas (Quadrantes) -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 items-stretch">
+        
+        <!-- 1. Quadrante de Aviso (Importante) -->
+        <div class="warning-banner bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-lg flex flex-col justify-center">
+            <div class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-[10px] text-yellow-900 leading-tight">
+                    <strong class="block text-xs mb-0.5">Aviso Importante:</strong>
+                    Usamos bases testadas. Moldes prontos podem precisar de ajustes, pois cada marca tem suas medidas e não são personalizados.
+                </p>
             </div>
         </div>
+
+        <!-- 2. Moldes Digitais -->
+        <div class="bg-white border border-gray-100 shadow-sm p-3 rounded-lg flex flex-col">
+            <h4 class="text-xs font-bold text-gray-800 mb-1 flex items-center gap-1">
+                <span>📄</span> Digital (PDF)
+            </h4>
+            <p class="text-[10px] text-gray-600 leading-tight">
+                Impressão caseira ou plotter. Tamanho real após emendar. Ideal para economizar frete.
+            </p>
+        </div>
+
+        <!-- 3. Tamanhos Fracionados -->
+        <div class="bg-white border border-gray-100 shadow-sm p-3 rounded-lg flex flex-col">
+            <h4 class="text-xs font-bold text-gray-800 mb-1 flex items-center gap-1">
+                <span>📏</span> Fracionados
+            </h4>
+            <p class="text-[10px] text-gray-600 leading-tight">
+                Impressos juntos em papel 75g (sem corte). Média R$ 24,90 cada + frete.
+            </p>
+        </div>
+
+        <!-- 4. Tamanhos Separados -->
+        <div class="bg-indigo-50 border border-indigo-100 shadow-sm p-3 rounded-lg flex flex-col justify-between">
+            <div>
+                <h4 class="text-xs font-bold text-indigo-900 mb-1 flex items-center gap-1">
+                    <span>✂️</span> Separados
+                </h4>
+                <p class="text-[10px] text-indigo-800 leading-tight mb-2">
+                    Média R$ 20,00 (mín. 5 tamanhos). Impressos sem corte.
+                </p>
+            </div>
+            <a href="https://wa.me/5535998121698?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20sobre%20comprar%20da%20moldes%20da%20Modelagem%20e%20Diversos." 
+               target="_blank" 
+               class="bg-indigo-600 text-white text-[9px] font-bold py-1 px-2 rounded text-center hover:bg-indigo-700 transition-colors">
+                CHAMAR WHATSAPP
+            </a>
+        </div>
+
+    </div>
+</div>
+
         </div>
         <p class="text-indigo-100 text-lg mb-8">Encontre o molde perfeito para sua confecção</p>
             
